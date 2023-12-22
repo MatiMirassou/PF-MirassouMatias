@@ -1,0 +1,202 @@
+/* Fonts */
+
+@font-face {
+    font-family: "pixeled";
+    src: url(../fonts/Pixeled.ttf);
+}
+
+@font-face {
+    font-family: "dstype";
+    src: url(../fonts/DSType.otf);
+}
+
+
+//VARS
+
+$color1: #b77195;
+$color2: #f6a862;
+$color3: #595957;
+$color4: #dfdfdf;
+$color5: #333331;
+
+$font1: dstype, Geneva, Tahoma, sans-serif;
+$font2: pixeled, Geneva, Tahoma, sans-serif;
+
+//CONDICIONALES
+
+$ancho: 200px;
+$alto: 300px;
+$margin: 20px;
+
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font1;
+}
+
+body{
+    background-color: $color3;
+}
+
+
+/* Estilos para Header*/
+nav{
+    background-color:$color5;
+}
+
+/* Estilos para Main*/
+
+@media (max-width: 991px) {
+    #hero_img{
+        margin: $margin;
+        width: 90%;
+        background-position: center;
+    }
+}
+
+#carousel_01 {
+    border-radius: 10px;
+}
+
+
+h1{
+    font-family: $font2;
+    line-height: 1.5;
+    color: $color4;
+    text-shadow: 0 2px 5px black;
+    font-size: 24px;
+}
+
+/*media querrie - mobile first*/
+
+@media only screen and (min-width: 992px){
+    h1{
+        font-size: 36px;
+    }
+}
+
+h2{
+    color: $color4;
+    font-size: 24px;
+    text-shadow: 0 2px 5px black;
+}
+
+.buynow{
+    text-decoration: none;
+    color: #fff;
+    background-color: $color2;
+    width: 80px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 7px;
+        &:hover{
+    background-color: $color4;
+    color: $color3;
+}
+}
+
+
+/* Estilos para Sections*/
+
+#img01 {
+    height: $alto+100;
+    width: auto;
+}
+
+@media (max-width: 991px) {
+    #img01{
+        margin: 10px;
+        width: 90%;
+        height: auto;
+    }
+}
+
+
+.title01 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.learnmore {
+    text-decoration: none;
+    right: 300px;
+    bottom: 80px;
+    color: #fff;
+    background-color: $color1;
+    width: 80px;
+    padding: 5px;
+    border-radius: 7px;
+        &:hover{
+    background-color: $color4;
+    color: $color3;
+}
+}
+
+#recuadro {
+    background-color: $color1;
+    border-radius: 25px;
+    height: $alto+100;
+}
+
+#imgdigital {
+    height: auto;
+    width: 80%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+h4 {
+    color: $color4;
+    font-size: 24px;
+}
+
+
+.parrafo01 {
+    color: $color3;
+    font-size: 16px;
+}
+
+.buynow2 {
+    text-decoration: none;
+    color: $color3;
+    background-color: $color4;
+    width: 80px;
+    padding: 5px;
+    border-radius: 7px;
+        &:hover {
+    background-color: $color3;
+    color: white;
+}
+}
+
+@media (max-width: 991px) {
+    #section01{
+        margin: 10px;
+    }
+    #section02-texto{
+        margin-top: 10px;
+    }
+    #recuadro{
+        height: auto;
+    }
+
+}
+
+@import "_footer";
+
+
+/* Import de las Paginas*/
+
+@import "_aboutus";
+@import "_artists";
+@import "_marketplace";
+@import "_contacto";
+
+
+
+
+

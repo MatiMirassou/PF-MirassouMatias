@@ -1,0 +1,35 @@
+/* Estilos para About Us */
+
+
+#aboutus-section01 {
+    background-color: $color4;
+    height: $alto;
+    border-radius: 10px;
+    margin-top: $margin*2;
+}
+
+#aboutus-section02 {
+    margin-top: $margin*2;
+}
+
+.DA-vertical {
+    height: 150px;
+    width: auto;
+}
+
+.aboutus-parrafo01 {
+    color: $color3;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+#aboutus-parrafo02 {
+    color: $color4;
+    font-size: 12px;
+}
+
+.aboutus-video {
+    height: $alto;
+    width: auto;
+}

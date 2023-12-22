@@ -1,0 +1,127 @@
+/* Estilos para Artist Page */
+
+
+#artist_title{
+    color: $color4;
+    font-size: 48px;
+    text-align: center;
+    justify-self: center;
+    text-decoration: none;
+    font-family: $font2;
+    margin: 20px;
+}
+
+#main_artist{
+    background-color: $color4;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: $margin+10;
+    img{
+        height: auto;
+        width: 60%;
+        margin: 0x 0px 5px 10px;
+    }
+    h3{
+        color: $color3;
+    font-size: 64px;
+    font-weight: 800;
+    padding-bottom: $margin;
+    }
+}
+
+#artist-section01{
+    width: 100%;
+    margin: 10px 0 10px 0;
+    h5{
+        color: $color4;
+        font-size: 24px;
+        text-decoration: underline;
+    }
+    p{
+        color: $color4;
+    }
+    img{
+        height: $alto+50;
+        width: auto;
+    }
+}
+
+#artist-section02  {
+    background-color: $color4;
+    border-radius: 10px;
+    width: 100%;
+    h5{
+        color: $color3;
+        font-size: 24px;
+        text-decoration: underline;
+    }
+    p{
+        color: $color3;
+        font-size: 16px;
+    }
+    video{
+        height: $alto+50;
+        width: auto;
+        padding: 10px 0 10px 0;
+    }
+}
+
+#artist-section03{
+    width: 100%;
+    h5{
+        color: $color4;
+        font-size: 24px;
+        text-decoration: underline;
+    }
+    p{
+        color: $color4;
+    }
+    video{
+        height: $alto+50;
+        width: auto;
+        padding: 10px 0 10px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    #main_artist{
+        h3{
+            font-size: 38px;
+        }
+        img{
+            width: 60%;
+        }
+    }
+    #artist_title{
+        font-size: 30px;
+        margin: 0px;
+    }
+    #artist-section03{
+        video{
+            width: 80%;
+        }
+    }
+    #artist-section02{
+        video{
+            height: 350px;
+            width: 80%;
+        }
+    }
+    #artist-section01{
+        img{
+            height: 350px;
+            width: auto;
+            margin: 10px 0 10px 0;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    #artist-section01{
+        img{
+            height: auto;
+            width: 80%;
+            margin: 10px 0 10px 0;
+        }
+    }
+}

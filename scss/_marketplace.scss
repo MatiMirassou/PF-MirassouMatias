@@ -1,0 +1,73 @@
+/* Estilos para Marketplace */
+
+#body-mk{
+    background-color: $color4;
+}
+
+#main_marketplace{
+    width: auto;
+        video{
+            width: 50%;
+        }
+        h3{
+            color: $color3;
+            font-size: 30px;
+}
+}
+
+
+h6 {
+    color: $color3;
+    font-size: 60px;
+    margin: $margin;
+}
+
+#section01_market{
+    background-color: $color1;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+#section02_market{
+    background-color: $color2;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 401px){
+    #section01_market{
+        .video-mk{
+            height: auto;
+            width: 80%;
+        }
+    }
+    #section02_market{
+        .video-mk{
+            height: auto;
+            width: 80%;
+        }
+    }
+    h6{
+        font-size: 30px;
+    }
+}
+
+
+/*media querrie - mobile first*/
+
+@media only screen and (min-width: 992px){
+    #main_marketplace{
+        width: auto;
+        background-color: $color4;
+        img{
+            width: $ancho*2;
+        }
+        h3{
+            font-size: 48px;
+        }
+    }
+}
+
