@@ -25,15 +25,17 @@ nav {
 }
 
 /* Estilos para Main*/
-@media (max-width: 991px) {
-  #hero_img {
-    margin: 20px;
-    width: 90%;
-    background-position: center;
-  }
+#hero {
+  background-color: #595957;
+  margin-top: 20px;
 }
-#carousel_01 {
+
+#hero_img {
+  color: transparent;
+  background-image: url(../images/NFT_back.png);
   border-radius: 10px;
+  background-size: cover;
+  height: 300px;
 }
 
 h1 {
@@ -45,6 +47,13 @@ h1 {
 }
 
 /*media querrie - mobile first*/
+@media (max-width: 991px) {
+  #hero_img {
+    margin: 20px;
+    width: 90%;
+    background-position: center;
+  }
+}
 @media only screen and (min-width: 992px) {
   h1 {
     font-size: 36px;
